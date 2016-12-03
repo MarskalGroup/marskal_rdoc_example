@@ -20,6 +20,7 @@
 
 ###Future Features
 * Create a Standard module to be used as a guide or template for documenting our code
+    * Use simple dice game of standard blog app
 * Create a method that can be called to create default/standardized documentation given some basic parameteres
 
 

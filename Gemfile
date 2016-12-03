@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 
-# gem 'hanna-nouveau', '~> 1.0', '>= 1.0.1'
+gem 'hanna-nouveau', '~> 1.0', '>= 1.0.1'
 gem 'yard'
 
 
