@@ -8,3 +8,14 @@ Rake::TestTask.new(:test) do |t|
 end
 
 task :default => :test
+
+
+
+gem 'rdoc'
+require 'rdoc/task'
+RDoc::Task.new do |rdoc|
+  # this only works with RDoc 3.1 or greater
+  rdoc.generator = 'hanna'
+  # this is what you use pre RDoc 3.1:
+  rdoc.options.push '-f', 'hanna'
+end

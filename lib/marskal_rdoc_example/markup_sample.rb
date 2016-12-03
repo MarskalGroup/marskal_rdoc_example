@@ -2,7 +2,9 @@ module MarskalRdocExample
 
   ##
   # MarkupSample. This module should have a method for most of the common markup syntax for RDoc
-  # ====== Much of the information was provided from the following links:
+  #
+  # <b>Much of the information was provided from the following links:</b>
+  #
   # - http://www.mikeperham.com/wp-content/uploads/2010/12/rdoc.html
   # - http://jan.varwig.org/wp-content/uploads/2006/09/Rdoc%20Cheat%20Sheet.pdf
   # - http://docs.seattlerb.org/rdoc/RDoc/Markup.html
@@ -22,7 +24,7 @@ Paragraph.
 Line 2 but still the same Paragraph.
 Line 3 but still the same Paragraph
 
-Now, a New Paragraph is created
+Now, a New Paragraph is createdsssssssss
 ---
 =end
     def self.comments_and_paragraphs_using_begin_end
@@ -44,7 +46,7 @@ Now, a New Paragraph is created
     #
     # Now, a New Paragraph is created
     # ---
-    def comments_and_paragraphs_using_hashtag
+    def self.comments_and_paragraphs_using_hashtag
       'RDoc sample of a group of comments and paragraphs using hash-tags #'
     end
 
@@ -104,9 +106,11 @@ Now, a New Paragraph is created
     # a. One
     # a. Two
     # a. Three
-    # ---
-    def alpha_list_lowercase
-      'RDoc example for an alphabetic list using lowercase letters'
+    #
+    # @param [String, #read] p_string the contents to reverse
+    # @return [String] the contents reversed lexically
+    def self.alpha_list_lowercase(p_string)
+      'RDoc example for an alphabetic list using lowercase letters' + p_string
     end
 
     ##
@@ -273,6 +277,53 @@ Now, a New Paragraph is created
     def stop_comments
       'RDoc Example of skipping/ignoring comments'
     end
+
+    ##
+    # This demonstrates RDoc automatically links your classes and file names when included in the documentation
+    #
+    #   # horizontal_rule   #Links to a method named 'horizontal_rule'
+    #
+    #   # SomeString        #Links to a class named 'SomeString'
+    #
+    #   # README.md         #Links to a File named 'README.md'
+    #
+    # <em>produces output as:</em>
+    #
+    # horizontal_rule   #Links to a method named 'horizontal_rule'
+    #
+    # SomeString        #Links to a class named 'SomeString'
+    #
+    # README.md         #Links to a File named 'README.md'
+    #
+    #---
+    def links_to_classes_methods_source_files
+      'Rdoc Example of documenting class names, methods, and source files'
+    end
+
+    ##
+    # This demonstrates RDoc automaticall links your classes and file names when included in the documentation
+    #
+    #   # http://pipsum.com/435x310.jpg    #Inserts an actual image
+    #
+    #   # http://www.example.com/          #Inserts a hyperlink to the website specified
+    #
+    #   # mailto: sam@example.org
+    #
+    # <em>produces output as:</em>
+    #
+    # http://pipsum.com/435x310.jpg    #Inserts an actual image
+    #
+    # http://www.example.com/          #Inserts a hyperlink to the website specified
+    #
+    # mailto:sam@example.org
+    #
+    #---
+    def hyperlinks
+      'Rdoc Example of documenting class names, methods, and source files'
+    end
+
+
+
 
 
   end
