@@ -1,8 +1,6 @@
 require "marskal_rdoc_example/version"
-require "marskal_rdoc_example/markup_sample"
-require "marskal_rdoc_example/some_string"
+require "marskal_rdoc/examples"
 
-require "marskal_yard_example/marskal_yard_example"
 
 ##
 # MarskalRdocExample. Example Gem to explore all the rdoc features and provide samples to be used as standards

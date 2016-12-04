@@ -14,7 +14,7 @@ require 'yard'
 YARD::Rake::YardocTask.new do |yard|
   yard.options = ['-odoc/yard'] # optional
 
-  # yard.files   = ['lib/**/*.rb', OTHER_PATHS]   # optional
+  yard.files   = ['lib/**/*.rb', '-', '*.md']   # 'make sure that '-'' element is in there or it doesnt process the .md files properly
   # yard.options = ['--any', '--extra', '--opts'] # optional
   # yard.stats_options = ['--list-undoc']         # optional
 end
@@ -22,6 +22,10 @@ end
 require 'rdoc/task'
 RDoc::Task.new do |rdoc|
   rdoc.rdoc_dir = 'doc/rdoc'
+  # rdoc.options = "-x 'stash' -x 'test' -x 'notes' -x 'bin' -x 'Gemfile' -m 'README.md'"
+  rdoc.options = ["--main_page 'README.md'"]
+  rdoc.main = "README.md"
+  rdoc.rdoc_files.include("*.md", "lib/**/*.rb", 'Gemfile.lock')
 end
 
 
@@ -41,8 +45,9 @@ end
 # end
 
 namespace 'MarskalRdocExample' do
-  desc 'Generate docs in all the available formats'
+  desc 'Erases /docs folder and Generates docs in all the available formats'
   task :generate_all_docs do
+    FileUtils.remove_dir "doc", true
     l_formats = [{ task: 'rdoc', format: 'default RDoc'},
                  { task: 'RDocInHannaFormat', format: 'Hanna Nouveau'},
                  { task: 'yard', format: 'Yard'}

@@ -3,7 +3,7 @@ module MarskalRdocExample
 
   ##
   # SomeString.  Processes a string
-  class SomeString
+  class SomeStringxx
 
     attr_reader :my_attr
     attr_accessor :your_attr

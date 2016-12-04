@@ -7,4 +7,3 @@ gemspec
 gem 'hanna-nouveau', '~> 1.0', '>= 1.0.1'
 gem 'yard'
 
-
