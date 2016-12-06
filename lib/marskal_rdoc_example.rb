@@ -1,5 +1,5 @@
 require "marskal_rdoc_example/version"
-require "marskal_rdoc/examples"
+require "marskal_rdoc"
 
 
 ##
@@ -11,8 +11,5 @@ module MarskalRdocExample
 
   # This is an example of an String constant
   SOME_CONSTANT_STRING = "This is a string defined as a Constant"
-
-
-
 
 end

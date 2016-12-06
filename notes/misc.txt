@@ -1,0 +1,7 @@
+>> I18n.load_path = [File.expand_path("../config/locale/en.yml", __FILE__)]
+>> I18n.reload!
+=> nil
+>> I18n.locale = :en
+=> :en
+>> I18n.t('hello')
+=> "Hello world"

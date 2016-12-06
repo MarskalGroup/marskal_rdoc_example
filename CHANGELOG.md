@@ -1,5 +1,13 @@
 # Changelog
 
+#### 0.1.4.wip - MAU `2016-12-03`  
+**Add Standards module and cleaned up existing docs**
+
+* Added Standards Module
+* Added an includes file to dry up redundant documentation for [reference links](lib/marskal_rdoc/includes/reference_links.rb).
+
+---
+
 #### 0.1.3.wip - MAU `2016-12-03`  
 **Reconfigured modules**
 

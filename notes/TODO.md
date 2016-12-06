@@ -15,6 +15,7 @@
 * Add bin files and make work on windows
 * Test on Windows and Linux
 * Get working on Travis
+* Add basic font changes as well
 
 ------
 

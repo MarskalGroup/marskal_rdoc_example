@@ -2,15 +2,10 @@ module MarskalRdoc
   module Examples
     module Rdoc
 
-      ##
-      # Markup. This module should have a method for most of the common markups for RDoc
-      #
-      # <b>Much of the information was provided from the following links:</b>
-      #
-      # - http://www.mikeperham.com/wp-content/uploads/2010/12/rdoc.html
-      # - http://jan.varwig.org/wp-content/uploads/2006/09/Rdoc%20Cheat%20Sheet.pdf
-      # - http://docs.seattlerb.org/rdoc/RDoc/Markup.html
-      #
+    ##
+    # Markup. This module should have a method for most of the common markups for RDoc
+    #
+    #:include:/../../includes/reference_links.rb
     module Markup
 =begin rdoc
   # Paragraph.
