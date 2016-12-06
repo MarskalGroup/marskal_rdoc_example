@@ -1,5 +1,14 @@
 # Changelog
 
+#### 0.1.5.wip - MAU `2016-12-06`  
+**Renamed DocModifiers and started on code documentation standards**
+
+* DocModifiers has been renamed to Directives
+* Add an example of :includes: directive
+* Started on coding documentation stnadars for regular RDoc markup
+
+---
+
 #### 0.1.4.wip - MAU `2016-12-03`  
 **Add Standards module and cleaned up existing docs**
 

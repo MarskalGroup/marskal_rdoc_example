@@ -1,6 +1,6 @@
 require_relative 'examples/rdoc/markup'
 require_relative 'examples/rdoc/links'
-require_relative 'examples/rdoc/doc_modifiers'
+require_relative 'examples/rdoc/directives'
 
 module MarskalRdoc
 
