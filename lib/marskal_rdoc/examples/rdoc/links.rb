@@ -5,7 +5,7 @@ module MarskalRdoc
       ##
       # Links. This module should have a method for most of the common links for RDoc
       #
-      #:include:/../../includes/reference_links.rb
+      # :include:/../../includes/reference_links.rb
       module Links
         ##
         # This demonstrates RDoc automatically links your classes and file names when included in the documentation

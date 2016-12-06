@@ -1,5 +1,14 @@
 # Changelog
 
+#### 0.1.6.wip - MAU `2016-12-06`  
+**NOT a good version because of :include: problems**
+
+* WIP version. In transition of eliminating RDoc and simply making this a yard doc gem
+* Possibly, elimitage yard and simply use rdoc and maybe hanna  
+* Come back to this later and decide
+
+---
+
 #### 0.1.5.wip - MAU `2016-12-06`  
 **Renamed DocModifiers and started on code documentation standards**
 

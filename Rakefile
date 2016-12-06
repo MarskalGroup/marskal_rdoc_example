@@ -23,20 +23,9 @@ require 'rdoc/task'
 RDoc::Task.new do |rdoc|
   rdoc.rdoc_dir = 'doc/rdoc'
   # rdoc.options = "-x 'stash' -x 'test' -x 'notes' -x 'bin' -x 'Gemfile' -m 'README.md'"
-  rdoc.options = ["--main_page 'README.md'"]
   rdoc.main = "README.md"
   rdoc.rdoc_files.include("*.md", "lib/**/*.rb", 'Gemfile.lock')
 end
-
-
-require 'rdoc/task'
-RDoc::Task.new do |rdoc|
-  rdoc.name = 'RDocInHannaFormat'
-  rdoc.title = 'Generate Doc in Hanna Format'
-  rdoc.rdoc_dir = 'doc/hanna'
-  rdoc.generator = 'hanna'
-end
-
 
 # MarskalRdocExample::GenerateAllHelpFormats
 #
@@ -49,7 +38,6 @@ namespace 'MarskalRdocExample' do
   task :generate_all_docs do
     FileUtils.remove_dir "doc", true
     l_formats = [{ task: 'rdoc', format: 'default RDoc'},
-                 { task: 'RDocInHannaFormat', format: 'Hanna Nouveau'},
                  { task: 'yard', format: 'Yard'}
     ]
     l_formats.each_with_index do |l_format, l_index|

@@ -5,8 +5,9 @@ module MarskalRdoc
       ##
       # Directives. This module should have a method for most of the common doc modifiers for RDoc
       #
-      # <b>Much of the information was provided from the following links:</b>
-      #:include:/../../includes/reference_links.rb
+      # *NOTE:* RDoc Directives may not be available in the +Yard+
+      #
+      # :include:/../../includes/reference_links.rb
       module Directives
 
         ##
@@ -29,7 +30,7 @@ module MarskalRdoc
         #
         # <em>produces output as:</em>
         #
-        # def args_directive&block # :args: a, b     #yields these varnames instead of default
+        # def args_directive&block # :args: a, b     #yields these var-names instead of default
         #---
         def self.args_directive(*a) #  :arg: a, b
           'Demonstrates use of the :args: directive'
@@ -38,11 +39,11 @@ module MarskalRdoc
         ##
         # This demonstrates RDoc <tt>':includes:'</tt> directive for including documentation from other files
         #
-        #   #:include:/../../includes/sample_for_includes_directive.rb
+        #   # :include:/../../includes/sample_for_includes_directive.rb
         #
         # <em>produces output as:</em>
         #
-        #:include:/../../includes/sample_for_includes_directive.rb
+        # :include:/../../includes/sample_for_includes_directive.rb
         #---
         def self.includes_directive
           'Demonstrates use of the :includes: directive'

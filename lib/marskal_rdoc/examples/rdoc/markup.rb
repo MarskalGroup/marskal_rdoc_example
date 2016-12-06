@@ -5,7 +5,7 @@ module MarskalRdoc
     ##
     # Markup. This module should have a method for most of the common markups for RDoc
     #
-    #:include:/../../includes/reference_links.rb
+    # :include:/../../includes/reference_links.rb
     module Markup
 =begin rdoc
   # Paragraph.
