@@ -1,5 +1,12 @@
 #Todo
 
+### Left Off
+* Remove yard samples
+* Change name of module from Examples to Samples?
+* Apply hanna-neavue
+* Look for any others that may work
+* Finalize and put in to marskal-rdoc
+
 ###Priorities
 * Continue to create samples of all important existing markup tags and syntax
 * Switch to Yard, strengthen this app

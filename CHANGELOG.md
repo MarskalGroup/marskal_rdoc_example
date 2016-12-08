@@ -1,5 +1,11 @@
 # Changelog
 
+#### 0.1.7.wip - MAU `2016-12-06`  
+* Applied Standards to Rdoc sample
+* Making sure they look acceptable in Yard Docs, but not using any Yard Tags  
+
+---
+
 #### 0.1.6.wip - MAU `2016-12-06`  
 **NOT a good version because of :include: problems**
 
